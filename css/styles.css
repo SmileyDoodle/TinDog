@@ -1,14 +1,14 @@
-/***** TAG SELECTORS ******/
+    /***** TAG SELECTORS ******/
 
-/****** CLASS SELECTORS ******/
+    /****** CLASS SELECTORS ******/
 
-
-/* Container-1 */
 
 .body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+
+/* Navigation and Main page */
 .navbar {
     padding: 0 0 4.5rem;
 }
@@ -33,15 +33,45 @@
    margin-right: 1rem;
 }
 .section-1-container-2 {
-    margin-top: 7rem;
+    margin-top: 3rem;
 }
 .img-rotation {
     width: 60%;
     transform:rotate(25deg);
+    position: absolute;
+    right: 25%;
+}
+
+@media (max-width: 425px) { 
+    #title {
+        height: 100% !important;
+    }
+    .download-button {
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
+    }
 }
 
 
-/* Container-2 */
+@media (max-width: 1024px) {
+    .main-page {
+        text-align: center;
+    }
+    .section-1-h1 {
+        font-size: 2.5rem;
+    }
+    .buttons {
+        padding: 0 2px;
+        margin: 0;
+    }
+    .img-rotation {
+        position: static;
+        transform:rotate(0);
+    }
+}
+
+
+/* Features */
 
 .icon {
     color: #ef8172;
@@ -65,7 +95,7 @@
     width: 85%;
 }
 
-/* Container-3 */
+/* Testimonials */
 
 .testimonial h2 {
     font-family: 'Montserrat', sans-serif;
@@ -84,12 +114,65 @@
     width: 15%;
     margin: 20px 20px 100px 20px;
 }
+@media (max-width: 425px) {
+    .carousel-item h2 {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+}
 
 
-/****** ID SELECTORS ******/
+/* Pricing */
 
+.pricing-table h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.pricing-table h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.offer {
+    padding-top: 2rem;
+}
+.extra-space {
+    margin-top: 3.5rem;
+}
 
-/* Container-1 */
+/* Call to Action */
+
+.cta-box {
+    margin: 0 auto;
+    padding: 5% 15%;
+    width: 85%;
+}
+.cta-box h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+.cta-buttons button {
+    margin: 30px 10px 50px;
+}
+
+/* Footer */
+
+.media-icons {
+    position: relative;
+    display: inline-block;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+.footer-box p {
+    color: #8f8f8f;
+}
+
+    /****** ID SELECTORS ******/
+
+/* Navigation and Main page  */
 
 #tindog {
     font-family: 'Ubuntu', sans-serif;
@@ -102,15 +185,15 @@
     overflow: hidden;
 }
 
-
-/* Container-2 */
+/* Features */
 
 #features {
     padding: 8rem 0;
+    background-color: white;
 }
 
 
-/* Container-3 */
+/* Testimonials */
 
 #testimonials {
     background-color: #ef8172;
@@ -121,5 +204,29 @@
 
 #press {
     background-color: #ef8172;
+    text-align: center;
+}
+
+/* Pricing */
+
+#pricing {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 8rem 0;
+}
+
+/* Call to Action */
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+}
+
+/* Footer */
+
+#footer {
+    background-color: white;
+    padding: 70px 0 50px;
     text-align: center;
 }
